@@ -44,19 +44,68 @@
 # print type(the_lie)
 
 # Raw Input
-first_name = raw_input("First Name: ")
-last_name = raw_input("Last Name: ")
+# first_name = raw_input("First Name: ")
+# last_name = raw_input("Last Name: ")
 
-# Conditionals
-# 1 = means you want to assign something
-# 2 == means you want to compare the left to the right
+# # Conditionals
+# # 1 = means you want to assign something
+# # 2 == means you want to compare the left to the right
 
-if(first_name == last_name):
-  print "Your first name is the same as your last name?"
+# if(first_name == last_name):
+#   print "Your first name is the same as your last name?"
 
-age = raw_input("How old are you? ")
-age_as_int = int(age)
-if(age_as_int >= 21):
-  print "You can buy beer"
+# age = raw_input("How old are you? ")
+# age_as_int = int(age)
+# if(age_as_int >= 21):
+#   print "You can buy beer."
+# else:
+#   print "Underage banned."
 
+import random
+random_number = random.randint(1,10)
+number_of_tries_left = 5
+try_or_tries = "tries"
+junk = "junk"
+# your_decision = raw_input("Would you like to play again? Y or N ")
+# if (number_of_tries_left == 1):
+#   try_or_tries = "try"
+# else:
+#   try_or_tries = "tries"
 
+not_guessed = True
+while not_guessed:
+  guess_a_number = raw_input("Guess a number between 1 and 10. ")
+  if (int(guess_a_number) == random_number and number_of_tries_left > 0):
+    print "You guessed the number!"
+    not_guessed = False
+    answer = raw_input("Play again? Y or N ")
+    if (answer == "Y"):
+      print "HE WON AND SAID YES"
+      number_of_tries_left = 5
+      not_guessed = True
+    else:
+      print "Fine, be that way"
+      not_guessed = False
+  elif (int(guess_a_number) > random_number and number_of_tries_left > 0):
+    number_of_tries_left -= 1
+    print "You guessed too high, you have %d %s left!" % (number_of_tries_left, try_or_tries)
+  elif (int(guess_a_number) < random_number and number_of_tries_left > 0):
+    number_of_tries_left -= 1
+    print "You guessed way way too low, you have %d %s left!" % (number_of_tries_left, try_or_tries)
+  else:
+    print "YOU LOSE!"
+    answer = raw_input("Play again? Y or N ")
+    if (answer == "Y"):
+      print "HE SAID YES!"
+      number_of_tries_left = 5
+      not_guessed = True
+    else:
+      print "Fine, be that way"
+      not_guessed = False
+# if (answer == "Y" or "y"):
+#   number_of_tries_left = 5
+#   not_guessed = True
+# elif (answer == "N" or "n"):
+#   print "Fine, be that way."
+# else:
+#   print "Oh my god I'm messed u"
