@@ -65,47 +65,34 @@ import random
 random_number = random.randint(1,10)
 number_of_tries_left = 5
 try_or_tries = "tries"
-junk = "junk"
-# your_decision = raw_input("Would you like to play again? Y or N ")
-# if (number_of_tries_left == 1):
-#   try_or_tries = "try"
-# else:
-#   try_or_tries = "tries"
 
 not_guessed = True
 while not_guessed:
   guess_a_number = raw_input("Guess a number between 1 and 10. ")
   if (int(guess_a_number) == random_number and number_of_tries_left > 0):
-    print "You guessed the number!"
+    print ("You guessed the number!")
     not_guessed = False
     answer = raw_input("Play again? Y or N ")
     if (answer == "Y"):
-      print "HE WON AND SAID YES"
+      print ("HE WON AND SAID YES")
       number_of_tries_left = 5
       not_guessed = True
     else:
-      print "Fine, be that way"
+      print ("Fine, be that way")
       not_guessed = False
   elif (int(guess_a_number) > random_number and number_of_tries_left > 0):
     number_of_tries_left -= 1
-    print "You guessed too high, you have %d %s left!" % (number_of_tries_left, try_or_tries)
+    print ("You guessed too high, you have %d %s left!") % (number_of_tries_left, try_or_tries)
   elif (int(guess_a_number) < random_number and number_of_tries_left > 0):
     number_of_tries_left -= 1
-    print "You guessed way way too low, you have %d %s left!" % (number_of_tries_left, try_or_tries)
+    print ("You guessed way way too low, you have %d %s left!") % (number_of_tries_left, try_or_tries)
   else:
-    print "YOU LOSE!"
+    print ("YOU LOSE!")
     answer = raw_input("Play again? Y or N ")
     if (answer == "Y"):
-      print "HE SAID YES!"
+      print ("HE SAID YES!")
       number_of_tries_left = 5
       not_guessed = True
     else:
-      print "Fine, be that way"
+      print ("Fine, be that way")
       not_guessed = False
-# if (answer == "Y" or "y"):
-#   number_of_tries_left = 5
-#   not_guessed = True
-# elif (answer == "N" or "n"):
-#   print "Fine, be that way."
-# else:
-#   print "Oh my god I'm messed u"
