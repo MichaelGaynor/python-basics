@@ -28,13 +28,19 @@
 # # Strings
 # first_name = "Captain"
 # last_name = "Crunch"
+#Formatted
 # print "Hello, {} {}".format(first_name, last_name)
+#Placeholder
 # print "Hello, %s %s for the %dth time!" % (first_name, last_name, 10)
 
 # # Floats
 # # pi_the_magic_float = 3.14
 # # print pi_the_magic_float
+#The Type Method
 # # print type(pi_the_magic_float)
+
+#Make string with str()
+#Make integer with int()
 
 
 # # Booleans (True and False)
@@ -43,7 +49,7 @@
 # the_lie = False
 # print type(the_lie)
 
-# Raw Input
+# Raw Input (just Input in newest Python)
 # first_name = raw_input("First Name: ")
 # last_name = raw_input("Last Name: ")
 
