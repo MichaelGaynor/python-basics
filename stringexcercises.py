@@ -1,5 +1,5 @@
 # ----------STRING EXCERCISES
-string_as_a_string = "This is a string"
+# string_as_a_string = "This is a string"
 
 # # --Uppercase a String
 # print (string_as_a_string.upper())
@@ -46,20 +46,11 @@ string_as_a_string = "This is a string"
 
 # for character in string_as_a_string.upper():
 #   for replaceable in characters_to_be_replaced:
-#     print string_as_a_string.upper()
-#     print (character)
-#     print (replaceable)
 #     if character == replaceable:
-#       print (replaceable)
-#       print (character)
-#       print Characters_to_replace_with.index(replaceable)
-#       print Characters_to_replace_with.index(character)
 #       character_replacement_list.append(Characters_to_replace_with.index(replaceable))
 #     else:
-#       print (character)
 #       character_replacement_list.append(character)
 # print (character_replacement_list)
-#   if character == characters_to_be_replaced[i]:
 
 
 # --Long-long Vowels
@@ -71,7 +62,7 @@ string_as_a_string = "This is a string"
 
 # ----------LIST EXCERCISES
 
-number_list = [1,2,-7,3,5,-2,2,8,15]
+# number_list = [1,2,-7,-7,3,5,2,2,8,15]
 
 # --Largest Number
 
@@ -152,19 +143,81 @@ number_list = [1,2,-7,3,5,-2,2,8,15]
 
 
 # --Matrix Addition II
-our_matrix1 = [[2,-2],[5,3]]
-our_matrix2 = [[1,0],[5,6]]
-our_matrix3 = [[0,0],[0,0]]
-for i in range(len(our_matrix1)):
-  for i2 in range(len(our_matrix1[0])):
-    our_matrix3[i][i2] = our_matrix1[i][i2] + our_matrix2[i][i2]
-for r in our_matrix3:
-  print(r)
+# our_matrix1 = [[2,-2],[5,3]]
+# our_matrix2 = [[1,0],[5,6]]
+# our_matrix3 = [[0,0],[0,0]]
+# for i in range(len(our_matrix1)):
+#   for i2 in range(len(our_matrix1[0])):
+#     our_matrix3[i][i2] = our_matrix1[i][i2] + our_matrix2[i][i2]
+# for r in our_matrix3:
+#   print(r)
+
 
 # --De-dup
+# number_list = [1,2,-7,-7,3,5,2,2,8,15]
+# non_duplicate_number_list = []
+# for i in number_list:
+#   if (i not in non_duplicate_number_list):
+#     non_duplicate_number_list.append(i)
+# print (non_duplicate_number_list)
 
 
 # --BONUS--Matrix Multiplication
 
 
 # ----------LOOOP EXCERCISES
+
+# -- 1 to 10
+# for i in range(1,11):
+#   print (i)
+
+
+# -- n to m
+# n = int(raw_input("Please enter a number: "))
+# m = int(raw_input("Thanks! Now please enter a higher number: "))
+# for i in range(n,m+1):
+#   print (i)
+
+
+# --Odd Numbers
+# for i in range(1,11,2):
+#   print (i)
+
+
+# --Print a Square
+# n = int(raw_input("Please pick your number!" ))
+# for i in range(1,n+1):
+#   print (n * "*")
+
+# --Print a Square II
+# n = int(raw_input("Please pick your number!" ))
+# for i in range(1,n+1):
+#   print (n * "*")
+
+# --Print a Box
+# h = int(raw_input("How high is your Box? "))
+# w = int(raw_input("How wide is your Box? "))
+# for i in range(1,h+1):
+#   if (i == 1 or i == h):
+#     print (w * "*")
+#   else:
+#     print ("*" + (w - 2) * " " + "*")
+
+# --Print a Triangle
+# h = 4
+# h = int(raw_input("How high do you want to go with this? "))
+# w = -1
+# for i in range(1,h+1):
+#   w = w + 2
+#   print ((h-i) * " " + (w * "*") + (h-i) * " ")
+
+# --Multiplication Table
+# for number in range(1,11):
+#   for numbers in range(1,11):
+#     print("%i" + " X " + "%i" + " = " + "%i") % (number,numbers,number * numbers)
+
+# BONUSES
+
+
+
+
