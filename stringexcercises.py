@@ -1,5 +1,5 @@
 # ----------STRING EXCERCISES
-# string_as_a_string = "This is a string"
+string_as_a_string = "This is a string"
 
 # # --Uppercase a String
 # print (string_as_a_string.upper())
@@ -18,6 +18,7 @@
 # characters_to_be_replaced = ["A","E","G","I","O","S","T"]
 # Characters_to_replace_with = ["4","3","6","1","0","5","7"]
 # character_replacement_list = ""
+# character_replacement_list = []
 
 # for character in string_as_a_string:
 
@@ -38,8 +39,8 @@
 #   elif (character.upper() == "T"):
 #     character_replacement_list += "7"
 #   else:
-#     character_replacement_list.append(character)
-# print ("".join(character_replacement_list))
+#     character_replacement_list += (character)
+# print (character_replacement_list)
 
 
 # for character in string_as_a_string:
