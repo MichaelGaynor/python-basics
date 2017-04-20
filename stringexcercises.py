@@ -1,5 +1,5 @@
 # ----------STRING EXCERCISES
-string_as_a_string = "This is a string"
+# string_as_a_string = "This is a string"
 
 # # --Uppercase a String
 # print (string_as_a_string.upper())
@@ -17,8 +17,9 @@ string_as_a_string = "This is a string"
 # --Leetspeak
 # characters_to_be_replaced = ["A","E","G","I","O","S","T"]
 # Characters_to_replace_with = ["4","3","6","1","0","5","7"]
-# character_replacement_list = ""
 # character_replacement_list = []
+
+# character_replacement_list = ""
 
 # for character in string_as_a_string:
 
@@ -53,10 +54,40 @@ string_as_a_string = "This is a string"
 
 
 # --Long-long Vowels
+# long_vowel_string = "Bookkeeper"
 
+# result = ""
+# current = ""
+# previous = ""
+
+# for i in range(0,len(long_vowel_string)):
+#   current = long_vowel_string[i]
+#   if (current == previous):
+#     result = result + 4 * current
+#   else:
+#     result = result + current
+#   previous = current
+# print (result)
 
 
 # --Caesar Cypher
+# def decrypt_function(encrypted_letter):
+#   number = encrypted_list.index(encrypted_letter)
+#   decrypted_message.append(decrypted_list[number])
+
+# message = "lbh zhfg hayrnea jung lbh unir yrnearq"
+# decrypted = "abcdefghijklmnopqrstuvwxyz "
+# encrypted = "nopqrstuvwxyzabcdefghijklm "
+# message_list = list(message)
+# decrypted_list = list(decrypted)
+# encrypted_list = list(encrypted)
+# decrypted_message = []
+
+# for i in range(0,len(message_list)):
+#   decrypt_function(message_list[i])
+
+# final_decrypted_message = "".join(decrypted_message)
+# print (final_decrypted_message)
 
 
 # ----------LIST EXCERCISES
