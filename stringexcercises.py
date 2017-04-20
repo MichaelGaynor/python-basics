@@ -141,6 +141,30 @@ number_list = [1,2,-7,3,5,-2,2,8,15]
 
 # --Matrix Addition
 
+# our_matrix1 = [[2,-2],[5,3]]
+# our_matrix2 = [[1,0],[5,6]]
+# our_matrix3 = [[0,0],[0,0]]
+# for i in range(len(our_matrix1)):
+#   for i2 in range(len(our_matrix1[0])):
+#     our_matrix3[i][i2] = our_matrix1[i][i2] + our_matrix2[i][i2]
+# for r in our_matrix3:
+#   print(r)
 
 
+# --Matrix Addition II
+our_matrix1 = [[2,-2],[5,3]]
+our_matrix2 = [[1,0],[5,6]]
+our_matrix3 = [[0,0],[0,0]]
+for i in range(len(our_matrix1)):
+  for i2 in range(len(our_matrix1[0])):
+    our_matrix3[i][i2] = our_matrix1[i][i2] + our_matrix2[i][i2]
+for r in our_matrix3:
+  print(r)
 
+# --De-dup
+
+
+# --BONUS--Matrix Multiplication
+
+
+# ----------LOOOP EXCERCISES
