@@ -17,36 +17,34 @@
 # --Leetspeak
 # characters_to_be_replaced = ["A","E","G","I","O","S","T"]
 # Characters_to_replace_with = ["4","3","6","1","0","5","7"]
-# character_replacement_list = []
-# position = 0
+# character_replacement_list = ""
 
 # for character in string_as_a_string:
 
 
-
-# for character in string_as_a_string.upper():
-#   if (character == "A"):
-#     character_replacement_list.append("4")
-#   elif (character == "E"):
-#     character_replacement_list.append("3")
-#   elif (character == "G"):
-#     character_replacement_list.append("6")
-#   elif (character == "I"):
-#     character_replacement_list.append("1")
-#   elif (character == "O"):
-#     character_replacement_list.append("0")
-#   elif (character == "S"):
-#     character_replacement_list.append("5")
-#   elif (character == "T"):
-#     character_replacement_list.append("7")
+# for character in string_as_a_string:
+#   if (character.upper() == "A"):
+#     character_replacement_list += "4"
+#   elif (character.upper() == "E"):
+#     character_replacement_list += "3"
+#   elif (character.upper() == "G"):
+#     character_replacement_list += "6"
+#   elif (character.upper() == "I"):
+#     character_replacement_list += "1"
+#   elif (character.upper() == "O"):
+#     character_replacement_list += "0"
+#   elif (character.upper() == "S"):
+#     character_replacement_list += "5"
+#   elif (character.upper() == "T"):
+#     character_replacement_list += "7"
 #   else:
 #     character_replacement_list.append(character)
 # print ("".join(character_replacement_list))
 
 
-# for character in string_as_a_string.upper():
+# for character in string_as_a_string:
 #   for replaceable in characters_to_be_replaced:
-#     if character == replaceable:
+#     if character.upper() == replaceable:
 #       character_replacement_list.append(Characters_to_replace_with.index(replaceable))
 #     else:
 #       character_replacement_list.append(character)
