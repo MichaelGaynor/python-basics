@@ -244,7 +244,87 @@ students = [
 # print normalize_string
 
 
+# Lists are awesome! But it's changeable
+# What if you wanted something that wasn't changeable?
+# A tuple is the same in all ways as a list except:
+# -1: its values cannot be changed
+# -2: it uses () instead of []
 
+# a_tuple_test = (1,5,8)
+# print (a_tuple_test[1])
+
+# a_tuple_test[1] = 6
+# print (a_tuple_test)
+
+
+# --DICTIONARIES
+# Dictionaries are very simple objects ("associative arrays")
+# They operate with a "key-value pair"
+# name = "Gary"
+# gender = "none"
+# height = "Very short"
+
+# person = {
+#   "name" : "Gary",
+#   "gender" : "none",
+#   "height" : "very short"
+# }
+
+# print (person["name"])
+
+# Can add key-value's as needed
+# zombie = {}
+# zombie["weapon"] = "axe"
+# zombie["health"] = 100
+# zombie["startX"] = 10
+# zombie["startY"] = 20
+# zombie["speed"] = 10
+
+# print (zombie)
+
+# for key,value in zombie.items():
+#   print ("Zombie has a key of %s with a value of %s" % (key,value))
+#   print (zombie[key])
+
+# if (zombie["speed"] < 5):
+#   zombie["position"] = zombie["startX"] + 5
+# elif (zombie["speed"] < 10):
+#   zombie["position"] = zombie["startX"] + 10
+# else:
+#   zombie["position"] = zombie["startX"] + 15
+
+# zombie["pointless"] = "Why?"
+# print (zombie)
+
+
+# zombies = []
+# zombies.append(
+#   {
+#   "speed" : 10,
+#   "weapon" : "fist",
+#   "name" : "Hank"
+#   }
+# )
+
+# zombies.append(
+#   {
+#   "speed" : 5,
+#   "weapon" : "baseball bat",
+#   "name" : "Dean"
+#   }
+# )
+
+# print (zombies[1]["speed"])
+
+# zombies[1]["victims"] = [
+#   "Jane",
+#   "Mike",
+#   "Jones Family" :{
+#     "father" : "Jim"
+#   }
+# ]
+
+# print (zombies[1]["victims"][1])
 
 
 

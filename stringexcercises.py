@@ -72,8 +72,13 @@
 
 # --Caesar Cypher
 # def decrypt_function(encrypted_letter):
-#   number = encrypted_list.index(encrypted_letter)
-#   decrypted_message.append(decrypted_list[number])
+#   try:
+#     number = encrypted_list.index(encrypted_letter)
+#   except ValueError:
+#     #Do this!
+#     decrypted_message.append(encrypted_letter)
+#   else:
+#     decrypted_message.append(decrypted_list[number])
 
 # message = "lbh zhfg hayrnea jung lbh unir yrnearq"
 # decrypted = "abcdefghijklmnopqrstuvwxyz "
@@ -234,12 +239,14 @@
 #     print ("*" + (w - 2) * " " + "*")
 
 # --Print a Triangle
-# h = 4
 # h = int(raw_input("How high do you want to go with this? "))
+# h = 5
 # w = -1
 # for i in range(1,h+1):
 #   w = w + 2
-#   print ((h-i) * " " + (w * "*") + (h-i) * " ")
+#   space = ((h-i)*" ")
+#   star = (w * "*")
+#   print (space + star)
 
 # --Multiplication Table
 # for number in range(1,11):
@@ -247,6 +254,27 @@
 #     print("%i" + " X " + "%i" + " = " + "%i") % (number,numbers,number * numbers)
 
 # BONUSES
+# --Print a Banner
+# the_text = raw_input("Enter your banner text now: ")
+# the_text = "AAAAAHHHHH! A banner that is too long! \n weird!"
+# h = len(the_text.split('\n')) + 2
+# w = len(the_text) + 4
+# for i in range(1,h+1):
+#   if (i == 1 or i == h):
+#     print (w * "*")
+#   else:
+#     print ("* " + the_text + " *")
+
+# --Triangle Numbers
+# for i in range(1,101):
+#   print (i * (i+1)/2)
+
+
+# --Factor a number
+# number = 100
+# for i in range(1,number+1):
+#   if (number % i == 0):
+#     print (i)
 
 
 
