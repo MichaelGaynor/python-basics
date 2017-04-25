@@ -371,13 +371,37 @@ class Person(object):
       "cell": cell,
       "home": "Who has a homephone anymore?"
     }
+  def greet(self, other_person):
+    print ("Hello %s, I am %s" % (other_person, self.name))
+
+  def print_contact_info(self):
+    if(self.phone["cell"] != ""):
+      print ("%s's number is %s" %(self.name, self.phone["cell"]))
 
 marissa = Person("Marissa", "female", "555-555-5505", 3)
 # print (marissa.name, marissa.gender)
 # print (marissa.species)
 # print (marissa.number_of_arms)
 # print (marissa.phone["cell"])
+# marissa.greet("Franco")
+# marissa.print_contact_info()
 
 # merilee = Person("Merilee", "female")
 # merilee.species = "Robot"
 # print (merilee.species)
+
+
+class Vehicle(object):
+  def __init__(self, make, model, year):
+    self.make = make
+    self.model = model
+    self.year = year
+  def print_info(self):
+    print self.year, self.model, self.make
+  def change_year(self, new_year):
+    self.year = new_year
+
+david_cummings_car = Vehicle("McClaren", "Mp4-12c", 2013)
+
+david_cummings_car.change_year(2015)
+david_cummings_car.print_info()
