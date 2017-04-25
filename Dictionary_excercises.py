@@ -16,8 +16,11 @@
 # print (phonebook_dict)
 
 # print (phonebook_dict)
+# print (phonebook_dict.values())
+# for key, value in phonebook_dict:
+#   print (key, value)
 
-# Dynamic set (probably)
+# Fixed set (probably)
 
 # ramit = {
 #   'name': 'Ramit',
@@ -49,7 +52,7 @@
 # jasmine_interest2 = ramit["friends"][1]["interests"][1]
 # print (jasmine_interest2)
 
-# Dynamic
+# Fixed
 
 
 # def letter_histogram(paragraph):
@@ -75,6 +78,7 @@
 #   return tally_of_words
 
 # # print (word_histogram("to be or not to be to to to not not to to to to, lol"))
+
 
 # from collections import Counter
 
