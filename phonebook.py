@@ -53,6 +53,7 @@ elif (main_menu_choice == "2"):
   name_to_enter = raw_input("Please enter the name: ")
   number_to_enter = raw_input("Please enter their number: ")
   phonebook_data.append({"name": name_to_enter, "number": number_to_enter})
+  main_menu()
 
 # ------Main Menu Choice 3------
 elif (main_menu_choice == "3"):
@@ -73,3 +74,8 @@ elif (main_menu_choice == "4"):
 # ------Main Menu Choice 6------
 elif (main_menu_choice =="6"):
   print ("good bye")
+
+# ------Non-existent Main Menu Choices------
+# else:
+#   print ("I'm sorry, that's not a valid option. Try again! ")
+#   main_menu()
