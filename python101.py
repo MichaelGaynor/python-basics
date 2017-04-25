@@ -359,3 +359,25 @@ students = [
 # Public, Private, and Protected:
   # -We'll never use them because they aren't part of python or javascript really, 
   #   but they are in a lot of programming languages including PHP
+
+
+class Person(object):
+  def __init__(self, name, gender, cell, number_of_arms = 2):
+    self.name = name
+    self.gender = gender
+    self.species = "Human"
+    self.number_of_arms = number_of_arms
+    self.phone = {
+      "cell": cell,
+      "home": "Who has a homephone anymore?"
+    }
+
+marissa = Person("Marissa", "female", "555-555-5505", 3)
+# print (marissa.name, marissa.gender)
+# print (marissa.species)
+# print (marissa.number_of_arms)
+# print (marissa.phone["cell"])
+
+# merilee = Person("Merilee", "female")
+# merilee.species = "Robot"
+# print (merilee.species)
