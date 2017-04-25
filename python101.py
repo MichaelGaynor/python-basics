@@ -327,5 +327,35 @@ students = [
 # print (zombies[1]["victims"][1])
 
 
+# Ways to program:
+# 1. Waterfall (What we've been doing for our pygame so far)
+# 2. Procedural:
+  # -function
+  # -Choose-your-own-adventure style
+  # -Initial overhead is low
+# 3. OOP (Object Oriented Programming):
+  # -functions are put where they belong
+  # -Initial overhead is higher, but then drops significantly
+  # -Portable
+  # -Reusable
+  # -Makes organization much easier (if not you messed up or shouldn't use it)
 
+# OOP is built around the idea of Class: the blueprint
+# The blueprint doesn't do anything, it's not the house, 
+# but it lets you build the house which you can then use
 
+# class = the blueprint
+# object = the thing
+# attributes = data
+# methods = actions
+
+# class = Car()
+  # public mpg=40
+# myCar = Car()
+# print myCar(object).mpg(attribute)
+
+# Encapsulation: Encapsulate everything an object might need in itself (methods, etc as part of it)
+
+# Public, Private, and Protected:
+  # -We'll never use them because they aren't part of python or javascript really, 
+  #   but they are in a lot of programming languages including PHP
